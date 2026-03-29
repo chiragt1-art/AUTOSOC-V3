@@ -11,7 +11,7 @@
 
 > ## 📸 Screenshots
 
-### screenshots/Screenshot 2026-03-28 160045.png
+### screenshots/dasboard.png
 
 ---
 
