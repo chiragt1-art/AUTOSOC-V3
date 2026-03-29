@@ -12,7 +12,14 @@
 > ## 📸 Screenshots
 
 ### ![AutoSOC Dashboard](screenshots/dasboard.png)
-```
+
+### ![AutoSOC Dashboard](screenshots/wazuh dasboard.png)
+
+### ![AutoSOC Dashboard](screenshots/terminal live alert.png)
+
+### ![AutoSOC Dashboard]screenshots/flask server running.png)
+
+### ![AutoSOC Dashboard]screenshots/kali attack.png)
 
 ---
 
