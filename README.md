@@ -11,7 +11,8 @@
 
 > ## 📸 Screenshots
 
-### screenshots/dasboard.png
+### ![AutoSOC Dashboard](screenshots/dasboard.png)
+```
 
 ---
 
