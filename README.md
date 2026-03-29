@@ -226,26 +226,30 @@ Instance 3 — Attacker
 ---
 
 ## 📊 Dashboard Sections
+```
++--------------------------------------------------+
+|         AUTOSOC v3.0 - AWS Network Security      |
++--------------------------------------------------+
+| Total Flow | Unique Src | Unique Dst | Sessions  |
++--------------------------------------------------+
 
-┌─────────────────────────────────────────────┐
-│  AUTOSOC v3.0 — AWS Network Security        │
-├──────────┬──────────┬──────────┬────────────┤
-│Total Flow│Unique Src│Unique Dst│Flow Sessions│
-├──────────┴──────────┴──────────┴────────────┤
-│  Largest Communications by IP (Bar Chart)   │
-│  Egress Regions by Session Count (Bar)      │
-├─────────────────────────────────────────────┤
-│  Most Active Ingress Countries (Donut)      │
-│  Attack Sources on World Map (Leaflet)      │
-├─────────────────────────────────────────────┤
-│  Recent Alerts and Flows                    │
-│  Total: 560+ | Critical: X | Wazuh Live: X │
-├─────────────────────────────────────────────┤
-│  🚨 Live Wazuh Alerts (scrollable list)    │
-│  [Wazuh-LIVE] CRITICAL — Privilege Escal.. │
-│  [Wazuh-LIVE] HIGH — PAM Login Session...  │
-└─────────────────────────────────────────────┘
+CHARTS:
+- Largest Communications by IP  --> Bar Chart
+- Egress Regions                --> Bar Chart  
+- Most Active Ingress Countries  --> Donut Chart
+- Attack Sources on World Map    --> Leaflet Map
+- Session Count                  --> Bar Chart
 
+STATS:
+- Total Alerts  : 560+
+- Critical      : Live count
+- Wazuh Live    : Live count
+
+LIVE ALERTS (scrollable):
+- [Wazuh-LIVE] CRITICAL - Privilege Escalation...
+- [Wazuh-LIVE] HIGH - PAM Login Session...
+- Recent Alerts and Flows feed
+```
 
 ---
 
