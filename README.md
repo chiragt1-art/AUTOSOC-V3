@@ -13,11 +13,20 @@
 
 ### ![AutoSOC Dashboard](screenshots/dasboard.png)
 
-### ![AutoSOC Dashboard](screenshots/terminal live alert.png)
+### 📊 Wazuh SIEM — 5,868 Events Detected
+![Wazuh Dashboard](screenshots/wazuh%20dasboard.png)
 
-### ![AutoSOC Dashboard]screenshots/flask server running.png)
+### 🎯 MITRE ATT&CK — Security Alerts Detected
+![Security Alerts](screenshots/security%20alert.png)
 
-### ![AutoSOC Dashboard]screenshots/kali attack.png)
+### ⚡ Live Terminal — Attacks Detected in Real Time
+![Terminal Alerts](screenshots/terminal%20live%20alert.png)
+
+### 🐉 Kali Linux Attack — nmap Scan
+![Kali Attack](screenshots/kali%20attack.png)
+
+### 🌐 Flask Server Running
+![Flask Server](screenshots/flask%20server%20running.png)
 
 ---
 
