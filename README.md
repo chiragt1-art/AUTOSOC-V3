@@ -31,37 +31,40 @@ It detects *live cyberattacks* from Kali Linux, maps them to *MITRE ATT&CK techn
 ---
 
 ## 🏗️ Complete Architecture
-┌─────────────────────────────────────────────────────────────┐
-│                        AWS CLOUD LAB                         │
-│                                                              │
-│   ┌─────────────────┐          ┌──────────────────────────┐ │
-│   │   ATTACKER      │  attacks │        VICTIM            │ │
-│   │  Kali Linux     │─────────►│      Ubuntu EC2          │ │
-│   │  nmap, hydra    │          │    + Wazuh Agent         │ │
-│   └─────────────────┘          └────────────┬─────────────┘ │
-│                                             │ detects       │
-│                                             ▼               │
-│                                ┌────────────────────────┐   │
-│                                │    Wazuh Manager       │   │
-│                                │       v4.7.5           │   │
-│                                └────────────┬───────────┘   │
-└─────────────────────────────────────────────┼───────────────┘
-                                              │
-                                   SSH pull every 10s
-                                              │
-                    ┌─────────────────────────▼──────────────┐
-                    │              YOUR LOCAL PC              │
-                    │                                        │
-                    │  wazuh_collector.py                    │
-                    │       ↓                                │
-                    │  logs/alerts.json                      │
-                    │       ↓                                │
-                    │  Flask App (app.py)                    │
-                    │       ↓                                │
-                    │  AUTOSOC Dashboard                     │
-                    │  http://localhost:5000                 │
-                    │  🔴 560+ LIVE ALERTS                   │
-                    └────────────────────────────────────────┘
+ =======================================================
+                    AWS CLOUD LAB
+=======================================================
+
+  [ATTACKER]                        [VICTIM]
+  Kali Linux    ---attacks--->    Ubuntu EC2
+  nmap, hydra                   + Wazuh Agent
+                                      |
+                                   detects
+                                      |
+                                      v
+                              [Wazuh Manager v4.7.5]
+=======================================================
+
+                    SSH pull every 10s
+                           |
+                           v
+=======================================================
+                    YOUR LOCAL PC
+=======================================================
+  wazuh_collector.py
+        |
+        v
+  logs/alerts.json
+        |
+        v
+  Flask App (app.py)
+        |
+        v
+  AUTOSOC Dashboard --> http://localhost:5000
+  
+  🔴 560+ LIVE ALERTS
+=======================================================
+                                                    
 
 
 ---
