@@ -31,6 +31,7 @@ It detects *live cyberattacks* from Kali Linux, maps them to *MITRE ATT&CK techn
 ---
 
 ## 🏗️ Complete Architecture
+```
  ===============================================
               AWS CLOUD LAB
 ===============================================
@@ -65,7 +66,7 @@ It detects *live cyberattacks* from Kali Linux, maps them to *MITRE ATT&CK techn
   
   560+ LIVE ALERTS!
 ===============================================
----
+```
 
 ## 🚨 Real Results From My Demo
 
