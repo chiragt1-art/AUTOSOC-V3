@@ -147,7 +147,7 @@ Dashboard Refresh      : Every 10 seconds
 ---
 
 ## 📁 Project Structure
-
+```
 AUTOSOC/
 │
 ├── app.py                  # Flask backend + full dashboard HTML
@@ -160,16 +160,16 @@ AUTOSOC/
 │   └── cloudtrail.json     # AWS CloudTrail events
 │
 └── README.md               # This file
-
+```
 
 ---
 
 ## ⚙️ How to Run This Project
 
 ### Prerequisites
-bash
+```bash
 pip install flask paramiko boto3
-
+```
 
 ### Step 1 — Clone the repo
 bash
