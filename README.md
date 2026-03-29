@@ -9,17 +9,17 @@
 
 > ## 📸 Screenshots
 
-### 🖥️ AutoSOC Live Dashboard — 560+ Real-Time Alerts
-![AutoSOC Dashboard](screenshots/Screenshot 2026-03-28 160045.png)
+### 🖥️ 
+Screenshot 2026-03-28 160045.png)
 
-### 📊 Wazuh SIEM — 5,868 Events Detected
-![Wazuh Dashboard](screenshots/Screenshot 2026-03-28 160623.png)
+### 📊 
+Screenshot 2026-03-28 160623.png)
 
-### 🎯 MITRE ATT&CK Alerts — T1548, T1078 Detected
-![Security Alerts](screenshots/Screenshot 2026-03-28 160646.png)
+### 
+Screenshot 2026-03-28 160646.png)
 
-### ⚡ Live Terminal — Attacks Detected in Real Time
-![Live Terminal](screenshots/Screenshot 2026-03-28 160120.png)
+### 
+Screenshot 2026-03-28 160120.png)
 
 
 ---
