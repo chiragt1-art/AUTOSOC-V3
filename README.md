@@ -11,17 +11,7 @@
 
 > ## 📸 Screenshots
 
-### Screenshot 2026-03-28 160045.png
-
-### Screenshot 2026-03-28 160623.png
-
-### Screenshot 2026-03-28 160646.png
-
-### Screenshot 2026-03-28 160120.png
-
-### Screenshot 2026-03-28 160107.png
-
-### Screenshot 2026-03-28 160209.png
+### screenshots/Screenshot 2026-03-28 160045.png
 
 ---
 
